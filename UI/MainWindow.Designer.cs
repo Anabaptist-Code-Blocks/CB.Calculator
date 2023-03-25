@@ -28,25 +28,23 @@
         /// </summary>
         private void InitializeComponent()
         {
-            calculatorButton1 = new WinFormsControlLibrary.CalculatorButton();
+            demoCalculator1 = new WinFormsControlLibrary.DemoCalculator();
             SuspendLayout();
             // 
-            // calculatorButton1
+            // demoCalculator1
             // 
-            calculatorButton1.Key = Calculator.Backend.CalculatorKey.Num7;
-            calculatorButton1.Location = new Point(102, 75);
-            calculatorButton1.Name = "calculatorButton1";
-            calculatorButton1.Size = new Size(75, 71);
-            calculatorButton1.TabIndex = 0;
-            calculatorButton1.Text = "calculatorButton1";
-            calculatorButton1.UseVisualStyleBackColor = true;
+            demoCalculator1.Dock = DockStyle.Fill;
+            demoCalculator1.Location = new Point(0, 0);
+            demoCalculator1.Name = "demoCalculator1";
+            demoCalculator1.Size = new Size(555, 449);
+            demoCalculator1.TabIndex = 0;
             // 
             // MainWindow
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
-            Controls.Add(calculatorButton1);
+            ClientSize = new Size(555, 449);
+            Controls.Add(demoCalculator1);
             ForeColor = SystemColors.ControlDarkDark;
             Name = "MainWindow";
             Text = "UI";
@@ -55,6 +53,6 @@
 
         #endregion
 
-        private WinFormsControlLibrary.CalculatorButton calculatorButton1;
+        private WinFormsControlLibrary.DemoCalculator demoCalculator1;
     }
 }
